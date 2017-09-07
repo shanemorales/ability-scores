@@ -1,5 +1,7 @@
 var arrScore = [];
 
+var scrNames = ["Strength","Dexterity","Constitution","Intelligence","Wisdom","Charisma"];
+
 function rndSix() {
   return Math.floor(Math.random() * 6) +1;
 }
@@ -28,27 +30,27 @@ for (i = 1;i < 7;i++) {
 
 let fnlScores = [
   {
-    ability: "Strength",
+    ability: scrNames[0],
     score: arrScore[0]
   },
   {
-    ability: "Dexterity",
+    ability: scrNames[1],
     score: arrScore[1]
   },
   {
-    ability: "Constitution",
+    ability: scrNames[2],
     score: arrScore[2]
   },
   {
-    ability: "Intelligence",
+    ability: scrNames[3],
     score: arrScore[3]
   },
   {
-    ability: "Wisdom",
+    ability: scrNames[4],
     score: arrScore[4]
   },
   {
-    ability: "Charisma",
+    ability: scrNames[5],
     score: arrScore[5]
   }
   ];
