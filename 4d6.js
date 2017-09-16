@@ -1,6 +1,6 @@
 var arrScore = [];
 
-var scrNames = ["Strength","Dexterity","Constitution","Intelligence","Wisdom","Charisma"];
+var scrNames = ['Strength','Dexterity','Constitution','Intelligence','Wisdom','Charisma'];
 
 function rndSix() {
   return Math.floor(Math.random() * 6) +1;
@@ -9,12 +9,13 @@ function rndSix() {
 function total() {
   return abScore.reduce(function(sum,value){return sum + value;},0);
 }
+
 for (i = 1;i < 7;i++) {
 
   var abScore = Array(4).fill(0).map(rndSix);
   /* console.log(abScore); */
 
-  abScore.sort(function(a,b){return b-a});
+  abScore.sort(function(a,b){return b-a;});
   /* console.log(abScore); */
 
   abScore.splice(-1,1);
@@ -53,10 +54,11 @@ let fnlScores = [
     ability: scrNames[5],
     score: arrScore[5]
   }
-  ];
+];
   
-  for (j=0;j<fnlScores.length;j++) {
-    for (let x in fnlScores[j]) {
-      console.log(fnlScores[j][x]);
-    }
+for (j=0;j<fnlScores.length;j++) {
+  for (let x in fnlScores[j]) {
+    console.log(x + ": " + fnlScores[j][x]);
+  }
+  console.log("---------------");
 }

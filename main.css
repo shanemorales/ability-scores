@@ -1,0 +1,16 @@
+.container {
+  width: 220px;
+  height: auto;
+  background-color: #F2F2F2;
+}
+
+.ability, .score {
+  margin: 10px;
+  display: inline-block;
+  font-size: 30px;
+  border: 1px solid red;
+}
+
+.score {
+  float: right;
+}

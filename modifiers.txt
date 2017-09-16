@@ -1,0 +1,41 @@
+Ability score modifiers are dependant on the ability score.
+
+ability       modifier
+  3             -4
+  4-5           -3
+  6-7           -2
+  8-9           -1
+  10-11         0
+  12-13         +1
+  14-15         +2
+  16-17         +3
+  18            +4
+
+Output should be like this:
+
+ability: Strength
+score: 11
+modifier: 0
+---------------
+ability: Dexterity
+score: 9
+modifier: -1
+---------------
+ability: Constitution
+score: 18
+modifier: +4
+---------------
+ability: Intelligence
+score: 10
+modifier: 0
+---------------
+ability: Wisdom
+score: 5
+modifier: -3
+---------------
+ability: Charisma
+score: 12
+modifier: +1
+---------------
+
+modifer will be part of the fnlScores object array.
